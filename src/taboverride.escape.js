@@ -1,7 +1,7 @@
 /*! taboverride.escape v0.1-dev | https://github.com/wjbryant/taboverride.escape
 Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
 
-/*global TABOVERRIDE */
+/*global tabOverride */
 
 // use CommonJS or AMD if available
 (function (factory) {
@@ -16,19 +16,19 @@ Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
         define(['taboverride'], factory);
     } else {
         // no module format - use global variable
-        factory(TABOVERRIDE);
+        factory(tabOverride);
     }
-}(function (TABOVERRIDE) {
+}(function (tabOverride) {
     'use strict';
 
     var escape = true,
-        listeners = TABOVERRIDE.utils.createListeners([
+        listeners = tabOverride.utils.createListeners([
             {
                 type: 'keydown',
                 handler: function (e) {
                     e = e || event;
                     if (escape && e.keyCode === 27) {
-                        TABOVERRIDE.utils.removeListeners(e.target || e.srcElement);
+                        tabOverride.utils.removeListeners(e.target || e.srcElement);
                     }
                 }
             },
@@ -36,12 +36,12 @@ Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
                 type: 'blur',
                 handler: function (e) {
                     e = e || event;
-                    TABOVERRIDE.utils.addListeners(e.target || e.srcElement);
+                    tabOverride.utils.addListeners(e.target || e.srcElement);
                 }
             }
         ]);
 
-    TABOVERRIDE.escape = function (enable) {
+    tabOverride.escape = function (enable) {
         if (arguments.length) {
             escape = enable ? true : false;
             return this;
@@ -49,7 +49,7 @@ Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
         return escape;
     };
 
-    TABOVERRIDE.addExtension(function (elem, enable) {
+    tabOverride.addExtension(function (elem, enable) {
         listeners[enable ? 'add' : 'remove'](elem);
     });
 }));

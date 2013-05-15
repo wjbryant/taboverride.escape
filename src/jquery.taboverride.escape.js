@@ -1,7 +1,7 @@
 /*! jquery.taboverride.escape v0.1-dev | https://github.com/wjbryant/taboverride.escape
 Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
 
-/*global exports, require, define, jQuery, TABOVERRIDE */
+/*global exports, require, define, jQuery, tabOverride */
 
 /**
  * the global jQuery object
@@ -32,14 +32,14 @@ Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
 		define( [ "jquery", "taboverride", "jquery.taboverride", "taboverride.escape" ], factory );
 	} else {
 		// No module format - Use global variables instead
-		factory( jQuery, TABOVERRIDE );
+		factory( jQuery, tabOverride );
 	}
-}(function ( $, TABOVERRIDE ) {
+}(function ( $, tabOverride ) {
 	"use strict";
 
 	var $fnTabOverride = $.fn.tabOverride;
 
-	$fnTabOverride.escape = TABOVERRIDE.escape;
+	$fnTabOverride.escape = tabOverride.escape;
 
 	$fnTabOverride.addDelegatedExtension(function ( $container, selector, enable ) {
 		$container.off( ".tabOverrideEscape", selector );
