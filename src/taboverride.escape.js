@@ -1,7 +1,7 @@
 /*! taboverride.escape v0.1.0-dev | https://github.com/wjbryant/taboverride.escape
 Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
 
-/*global tabOverride */
+/*global exports, require, define, tabOverride */
 
 // use CommonJS or AMD if available
 (function (factory) {
@@ -49,7 +49,7 @@ Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
         return escape;
     };
 
-    tabOverride.addExtension(function (elem, enable) {
+    tabOverride.addExtension('set', function (elem, enable) {
         listeners[enable ? 'add' : 'remove'](elem);
     });
 }));
