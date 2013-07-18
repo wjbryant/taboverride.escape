@@ -41,7 +41,7 @@ Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
 
 	$fnTabOverride.escape = tabOverride.escape;
 
-	$fnTabOverride.addDelegatedExtension(function ( $container, selector, enable ) {
+	$fnTabOverride.addExtension( "setDelegated", function ( $container, selector, enable ) {
 		$container.off( ".tabOverrideEscape", selector );
 
 		if ( enable ) {
