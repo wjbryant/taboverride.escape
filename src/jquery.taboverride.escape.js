@@ -1,20 +1,19 @@
 /*! jquery.taboverride.escape v0.1.0-dev | https://github.com/wjbryant/taboverride.escape
 Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
 
+/*jslint white: true */
 /*global exports, require, define, jQuery, tabOverride */
 
 /**
  * the global jQuery object
  *
- * @name jQuery
- * @namespace
+ * @namespace jQuery
  */
 
 /**
  * the jQuery prototype shortcut "namespace"
  *
- * @name fn
- * @namespace
+ * @namespace fn
  * @memberOf jQuery
  */
 

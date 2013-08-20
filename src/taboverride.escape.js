@@ -1,6 +1,7 @@
 /*! taboverride.escape v0.1.0-dev | https://github.com/wjbryant/taboverride.escape
 Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
 
+/*jslint browser: true */
 /*global exports, require, define, tabOverride */
 
 // use CommonJS or AMD if available

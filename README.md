@@ -1,8 +1,9 @@
-# taboverride.escape
+# tabOverride.escape
 
 Escape extension for [Tab Override](https://github.com/wjbryant/taboverride) 4.0+
 
-This extension makes the Escape key temporarily disable Tab Override.
+This extension makes the Escape key temporarily disable Tab Override. It is
+re-enabled once the textarea is blurred (loses focus).
 
 ## Usage
 
