@@ -4,6 +4,8 @@ Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
 /*jslint browser: true */
 /*global exports, require, define, tabOverride */
 
+/** @external tabOverride */
+
 // use CommonJS or AMD if available
 (function (factory) {
     'use strict';
@@ -42,6 +44,16 @@ Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
             }
         ]);
 
+    /**
+     * Gets or sets whether the escape extension is enabled (true) or disabled
+     * (false).
+     *
+     * @param  {boolean}        [enable]  whether to enable the escape extension
+     * @return {boolean|Object}           whether the escape extension is
+     *                                    enabled or the tabOverride object
+     *
+     * @memberOf external:tabOverride
+     */
     tabOverride.escape = function (enable) {
         if (arguments.length) {
             escape = enable ? true : false;

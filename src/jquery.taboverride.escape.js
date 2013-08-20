@@ -38,6 +38,16 @@ Copyright (c) 2013 Bill Bryant | http://opensource.org/licenses/mit */
 
 	var $fnTabOverride = $.fn.tabOverride;
 
+	/**
+	 * Gets or sets whether the escape extension is enabled (true) or disabled
+	 * (false).
+	 *
+	 * @param  {boolean}        [enable]  whether to enable the escape extension
+	 * @return {boolean|Object}           whether the escape extension is
+	 *                                    enabled or the tabOverride object
+	 *
+	 * @method external:"jQuery.fn.tabOverride".escape
+	 */
 	$fnTabOverride.escape = tabOverride.escape;
 
 	tabOverride.addExtension( "setDelegated", function ( $container, selector, enable ) {
