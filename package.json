@@ -1,0 +1,28 @@
+{
+    "name": "taboverride.escape",
+    "version": "0.1.0",
+    "author": {
+        "name": "Bill Bryant",
+        "url": "http://wjbryant.com/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/mit"
+        }
+    ],
+    "libDependencies": {
+        "taboverride": ">=4.0.0 <5.0.0"
+    },
+    "description": "Escape extension for Tab Override. Makes the Escape key temporarily disable Tab Override.",
+    "keywords": [
+        "tab",
+        "tabs",
+        "escape",
+        "key",
+        "disable",
+        "extension"
+    ],
+    "homepage": "https://github.com/wjbryant/taboverride.escape",
+    "bugs": "https://github.com/wjbryant/taboverride.escape/issues"
+}
